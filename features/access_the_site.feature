@@ -1,5 +1,5 @@
 Feature: Access to the site
-	Navigate to the website
+	This feature is for navigate to the website
 
 	Scenario: A user navigate to the site
 		Given That a user opens the browser
