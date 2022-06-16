@@ -1,7 +1,7 @@
 {
   "name": "qa_automation_nest_assessment",
   "version": "1.0.0",
-  "description": "Project where I have developed the assessment for QA Automation Training of the Patagonian Nest Program 2022",
+  "description": "Project in which I have developed the assessment for QA Automation Training of the Patagonian Nest Program 2022",
   "main": "index.js",
   "scripts": {
     "api": "DEBUG=pw:api cucumber-js",
