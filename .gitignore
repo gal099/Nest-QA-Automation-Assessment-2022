@@ -65,7 +65,9 @@ typings/
 #reports
 reports/*.html
 reports/*.json
+reports/*.ndjson
 
+#traces
 traces/
 
 #build
