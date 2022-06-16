@@ -4,7 +4,7 @@ export const selector = {
   searchBtn: '.NewSearch-button > svg', //Landing page search box button
   courseList: '.CourseList > article', //List of searched courses
   menu: 'div.Menu-dropdown > div > svg', //Landing page Dropdown menu
-  blog: 'li:nth-child(2) > a > div', //Platzi blog
+  blog: 'li:nth-child(2) > a > div', //Blog
   blogSearchInput: 'div.col-xs-12.col-md-5 > form > input', //Blog search box input
   blogSearchBtn: 'div.col-xs-12.col-md-5 > form > div > input[type=submit]', //Blog search button
   searchTabs: '#search > div.Search.u-wrapper > div > div > div.u-wrapper > div > div.Tab', //Amount of tags

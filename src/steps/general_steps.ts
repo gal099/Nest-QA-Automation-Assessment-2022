@@ -15,7 +15,7 @@ When('The user searchs a topic', async function (this: ICustomWorld) {
   await page.waitForTimeout(3000);
 });
 
-Given('A user is in the platzi blog landing page', async function (this: ICustomWorld) {
+Given('A user is in the blog landing page', async function (this: ICustomWorld) {
   const page = this.page!;
   await page.goto(urlMap.get('website'));
   await page.click(selector.menu);
