@@ -7,4 +7,4 @@ Feature: Sort the list by most voted
     Scenario: Sort the search list
         When The user searchs a blog topic
         And The user sorts the list by most voted
-        Then The list should be sort by most voted
+        Then The list should be sorted by most voted
