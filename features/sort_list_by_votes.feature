@@ -1,5 +1,5 @@
 Feature: Sort the list by most voted
-    This feature sorts the list of the the blog topic search
+    This feature sorts the list of the blog topic search
 
     Background: Navigates to the blog landing page
         Given A user is in the blog landing page
