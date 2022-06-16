@@ -18,6 +18,7 @@ export const selector = {
   filtersMenu: '.Filters-container', //Blog Filters menu
   mostVoted: 'a.Filters-single:nth-child(3)', //Most voted filter
   activeFilter: '.Filters-selected', //The selected filter from the filters menu
+  filterAssertion: 'Más votados', //Value used to verify the step
   postTitle: 'div.Contribution-content > div > h3', //Title of the blog post
   likes: 'span.Star-number', //Amount of the blog post likes
 };
