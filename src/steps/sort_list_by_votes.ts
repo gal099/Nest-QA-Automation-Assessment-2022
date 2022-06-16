@@ -2,6 +2,10 @@ import { ICustomWorld } from '../support/custom-world';
 import { selector } from '../utils/elements_selector';
 import { When, Then } from '@cucumber/cucumber';
 
+/**
+ * Sort list
+ * @param {ICustomWorld} this
+ */
 When('The user sorts the list by most voted', async function (this: ICustomWorld) {
   const page = this.page!;
   await page.click(selector.filtersMenu);
@@ -9,7 +13,11 @@ When('The user sorts the list by most voted', async function (this: ICustomWorld
   await page.waitForLoadState('domcontentloaded');
 });
 
-Then('The list should be sort by most voted', async function (this: ICustomWorld) {
+/**
+ * Confirm list sorted
+ * @param {ICustomWorld} this
+ */
+Then('The list should be sorted by most voted', async function (this: ICustomWorld) {
   const page = this.page!;
   const currentFilter = await page.locator(selector.activeFilter).innerText();
   try {
