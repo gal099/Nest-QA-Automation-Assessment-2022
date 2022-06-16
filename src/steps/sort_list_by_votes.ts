@@ -10,7 +10,7 @@ When('The user sorts the list by most voted', async function (this: ICustomWorld
   const page = this.page!;
   await page.click(selector.filtersMenu);
   await page.click(selector.mostVoted);
-  await page.waitForLoadState('domcontentloaded');
+  await page.waitForLoadState('domcontentloaded', { timeout: 0 });
 });
 
 /**
