@@ -10,6 +10,7 @@ import { expect } from '@playwright/test';
  */
 Given('That a user opens the browser', async function (this: ICustomWorld) {
   const page = this.page!;
+  if (!page) throw new Error('no page');
   await page.goto(urlMap.get('default'));
 });
 
@@ -19,14 +20,18 @@ Given('That a user opens the browser', async function (this: ICustomWorld) {
  */
 When('The user navigate to the site', async function (this: ICustomWorld) {
   const page = this.page!;
+  if (!page) throw new Error('no page');
   await page.goto(urlMap.get('website'));
 });
 
 /**
- * Validate that the user has been directed to the landing page
+ * Assertion
  * @param {ICustomWorld} this
  */
 Then('The user should see the landing page', async function (this: ICustomWorld) {
   const page = this.page!;
+  if (!page) throw new Error('no page');
   expect(await page.waitForSelector(selector.loginBtn, { state: 'visible' })).toBeTruthy;
+  // eslint-disable-next-line no-console
+  console.log(`\n Test results:\n Navigation has been successful.`);
 });
