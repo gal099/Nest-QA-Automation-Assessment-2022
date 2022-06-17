@@ -11,51 +11,54 @@ Project in which I have developed the assessment for QA Automation Training of t
 ## Installation:
 
 ```bash
-$ git clone https://github.com/gal099/Nest-QA-Automation-Assessment-2022.git
-$ npm i
+git clone https://github.com/gal099/Nest-QA-Automation-Assessment-2022.git
+
+cd Nest-QA-Automation-Assessment-2022
+
+npm i
 ```
 
 ---
 
-## Commands for executing the assigned tests in headless mode:
+## Commands for executing the assigned tests:
+
+> Headless mode execution:
+>
+> > Note: Can also execute the tests in headed mode (step by step) changing the start of the command by `PWDEBUG=1`
 
 ```bash
 # Access the site.
-$ PWDEBUG=0 npx cucumber-js --name "A user navigate to the site"
+PWDEBUG=0 npx cucumber-js --name "A user navigate to the site"
 
 # Topic search from the search bar.
-$ PWDEBUG=0 npx cucumber-js --name "Search a topic"
+PWDEBUG=0 npx cucumber-js --name "Search a topic"
 
 # Loop through the tags and count the pages of each one.
-$ PWDEBUG=0 npx cucumber-js --name "Count tags pages"
+PWDEBUG=0 npx cucumber-js --name "Count tags pages"
 
 # Enter to the first course and show the amount of opinions.
-$ PWDEBUG=0 npx cucumber-js --name "Show the first topic comments amount"
+PWDEBUG=0 npx cucumber-js --name "Show the first topic comments amount"
 
 # Access the blog and search for a topic.
-$ PWDEBUG=0 npx cucumber-js --name "Blog topic search"
+PWDEBUG=0 npx cucumber-js --name "Blog topic search"
 
 # Sort the list by "Most Voted".
-$ PWDEBUG=0 npx cucumber-js --name "Sort the search list"
+PWDEBUG=0 npx cucumber-js --name "Sort the search list"
 
 # Get the first one and return the name and the total of likes.
-$ PWDEBUG=0 npx cucumber-js --name "Get the name and likes"
+PWDEBUG=0 npx cucumber-js --name "Get the name and likes"
 ```
 
-> Can also execute the tests in headed mode (step by step) changing the beginning of the command by `PWDEBUG=1`
-
 ---
+
+## Other commands:
 
 ```bash
 #To run all tests
-$ npm run test
-```
+npm run test
 
----
-
-```bash
 # To opens generated reports
-$ npm run report
+npm run report
 ```
 
 ---

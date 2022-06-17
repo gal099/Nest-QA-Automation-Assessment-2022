@@ -1,6 +1,6 @@
 {
   "name": "qa_automation_nest_assessment",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Project in which I have developed the assessment for QA Automation Training of the Patagonian Nest Program 2022",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tallyb/cucumber7-playwright.git"
+    "url": "https://github.com/gal099/Nest-QA-Automation-Assessment-2022.git"
   },
   "author": "Juan Baez",
   "license": "ISC",
