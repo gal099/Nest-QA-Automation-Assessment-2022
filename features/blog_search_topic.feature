@@ -6,4 +6,4 @@ Feature: Search a topic in the blog
 
     Scenario: Blog topic search
         When The user searchs a blog topic
-        Then A list of post should be displayed
+        Then The amount of posts found should be displayed

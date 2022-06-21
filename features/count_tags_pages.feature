@@ -6,5 +6,5 @@ Feature: Count pages for each tag
 
 	Scenario: Count tags pages
 		When The user searchs a topic
-		Then The user should see the number of pages of the current tag
+		Then The user should see the amount of pages of the current tag
 
