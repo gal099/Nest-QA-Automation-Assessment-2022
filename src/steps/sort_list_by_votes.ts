@@ -11,7 +11,6 @@ When('The user sorts the list by most voted', async function (this: ICustomWorld
   if (!page) throw new Error('no page');
   await page.click(selector.filtersMenu);
   await page.click(selector.mostVoted);
-  await page.waitForLoadState();
 });
 
 /**

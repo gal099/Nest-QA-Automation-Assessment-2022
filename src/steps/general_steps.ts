@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { ICustomWorld } from '../support/custom-world';
 import { urlMap, topic } from '../pom';
 import { selector } from '../utils/elements_selector';
@@ -22,7 +23,7 @@ When('The user searchs a topic', async function (this: ICustomWorld) {
   if (!page) throw new Error('no page');
   await page.fill(selector.searchInput, topic);
   await page.click(selector.searchBtn);
-  await page.waitForLoadState('networkidle');
+  await page.waitForTimeout(3000);
 });
 
 /**
@@ -46,5 +47,5 @@ When('The user searchs a blog topic', async function (this: ICustomWorld) {
   if (!page) throw new Error('no page');
   await page.fill(selector.blogSearchInput, topic);
   await page.click(selector.blogSearchBtn);
-  await page.waitForLoadState('networkidle');
+  await page.waitForTimeout(3000);
 });
