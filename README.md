@@ -31,7 +31,7 @@ npm i
 PWDEBUG=0 npx cucumber-js --name "A user navigate to the site"
 
 # Topic search from the search bar.
-PWDEBUG=0 npx cucumber-js --name "Search a topic"
+PWDEBUG=0 npx cucumber-js --name "Topic search"
 
 # Loop through the tags and count the pages of each one.
 PWDEBUG=0 npx cucumber-js --name "Count tags pages"
