@@ -24,7 +24,6 @@ Then('The list should be sorted by most voted', async function (this: ICustomWor
 
   try {
     if (currentFilter === selector.filterAssertion) {
-      // eslint-disable-next-line no-console
       console.log(`\n Test results:\n The list has been sorted successfully.`);
     }
   } catch (error) {

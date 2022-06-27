@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { ICustomWorld } from '../support/custom-world';
 import { urlMap, topic } from '../pom';
 import { selector } from '../utils/elements_selector';

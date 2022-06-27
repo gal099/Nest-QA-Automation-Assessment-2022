@@ -13,7 +13,6 @@ Then(
     if (!page) throw new Error('no page');
     const postName = await page.locator(selector.postTitle).first().innerText();
     const postLikes = await page.locator(selector.likes).first().innerText();
-    // eslint-disable-next-line no-console
     console.log(`\n Test results:\n Most voted post name: '${postName}'.\n Likes: ${postLikes}.`);
   },
 );

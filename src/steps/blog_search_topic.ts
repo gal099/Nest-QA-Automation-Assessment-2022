@@ -15,7 +15,6 @@ Then('The amount of posts found should be displayed', async function (this: ICus
   const resultAmount = await resultsList.count();
   try {
     expect(resultAmount).toBeGreaterThan(0);
-    // eslint-disable-next-line no-console
     console.log(`\n Test result:\n ${resultAmount} posts found.`);
   } catch (error) {
     throw new Error(`\n No post found. Retest this feature to gathering more info.\n ${error}`);

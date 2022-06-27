@@ -32,6 +32,5 @@ Then('The user should see the landing page', async function (this: ICustomWorld)
   const page = this.page!;
   if (!page) throw new Error('no page');
   expect(await page.waitForSelector(selector.loginBtn, { state: 'visible' })).toBeTruthy;
-  // eslint-disable-next-line no-console
   console.log(`\n Test results:\n Navigation has been successful.`);
 });

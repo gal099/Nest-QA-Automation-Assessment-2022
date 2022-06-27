@@ -21,6 +21,5 @@ Then('The comments amount should be displayed', async function (this: ICustomWor
   if (!page) throw new Error('no page');
   const topicName = await page.locator(selector.courseTitle).innerText();
   const opinionsAmount = await page.locator(selector.opinions).innerText();
-  // eslint-disable-next-line no-console
   console.log(`\n Test results:\n The '${topicName}' topic has ${opinionsAmount} opinions.`);
 });
