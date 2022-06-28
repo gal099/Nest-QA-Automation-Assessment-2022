@@ -74,3 +74,6 @@ traces/
 build
 dist/
 docs/
+
+#others
+package-lock.json
