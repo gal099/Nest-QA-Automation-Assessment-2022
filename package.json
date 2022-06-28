@@ -23,7 +23,7 @@
     "docker": "docker run --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:latest /bin/bash"
   },
   "engines": {
-    "node": ">=14"
+    "node": "=16.14.2"
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
     "cucumber-html-reporter": "5.5.0",
     "dotenv": "^16.0.0",
     "expect": "27.5.1",
-    "playwright": "1.19.1"
+    "playwright": "^1.23.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.19.1",
